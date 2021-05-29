@@ -1,0 +1,1383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SMM v.6 Blocks id Table</title>
+</head>
+<body>
+
+<h3>Key</h3>
+<p><a href=" /tables">See other tables</a></p>
+<p>Click <a href="#table">here</a> to go directly to the id table</p>
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-knln{background-color:#ffffff;position:-webkit-sticky;position:sticky;text-align:left;top:-1px;vertical-align:middle;
+  will-change:transform}
+.tg .tg-mlbv{background-color:#DBE5F1;text-align:left;vertical-align:middle}
+.tg .tg-wkbc{background-color:#D8D8D8;text-align:left;vertical-align:middle}
+@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}</style>
+<div class="tg-wrap"><table class="tg">
+<thead>
+  <tr>
+    <th class="tg-knln"><span style="background-color:#ffffff">Things in tag</span></th>
+    <th class="tg-knln"><span style="background-color:#ffffff">Meaning</span></th>
+    <th class="tg-knln"><span style="background-color:#ffffff">Information</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">#</span></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">number</span></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">number like 0, 1, 2… can be decimal like 0.5</span></td>
+  </tr>
+  <tr>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">§</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">string (a text chain)</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">string don't need quote</span></td>
+  </tr>
+  <tr>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">?</span></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">unknow value type</span></td>
+    <td class="tg-mlbv"></td>
+  </tr>
+  <tr>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">&lt;entity&gt;</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">entity id+tag</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">ex : e1{size:200}</span></td>
+  </tr>
+  <tr>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">#[%]</span></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">number in %. ( 100 mean 100%)</span></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">number in %. 100 mean 100%</span></td>
+  </tr>
+  <tr>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">#[m]</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">number in meter</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">1 meter = 1 block</span></td>
+  </tr>
+  <tr>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">#[px]</span></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">number in px</span></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">16 px = 1 block. Divide a px by 16 and you get meter</span></td>
+  </tr>
+  <tr>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">#[tick]</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">number in tick</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">The game inside time. The game run by default at 19 tick pers second. This value can be changed later on when pressing P when playing</span></td>
+  </tr>
+  <tr>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">#[°]</span></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">number in degree °</span></td>
+    <td class="tg-mlbv"></td>
+  </tr>
+  <tr>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">#[coef]</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">number. Coefficient</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">similar to % but 1 mean 100% instead of 100. (rarely used)</span></td>
+  </tr>
+  <tr>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">#[px/tick]</span></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">number in px/tick</span></td>
+    <td class="tg-mlbv"></td>
+  </tr>
+</tbody>
+</table></div>
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-8i6y{background-color:#DBE5F1;color:#00E;text-align:left;text-decoration:underline;vertical-align:top}
+.tg .tg-zvb1{background-color:#D8D8D8;color:#00E;text-align:left;text-decoration:underline;vertical-align:top}
+.tg .tg-nxzy{background-color:#ffffff;position:-webkit-sticky;position:sticky;text-align:left;top:-1px;vertical-align:middle;
+  will-change:transform}
+.tg .tg-wkbc{background-color:#D8D8D8;text-align:left;vertical-align:middle}
+.tg .tg-mlbv{background-color:#DBE5F1;text-align:left;vertical-align:middle}
+.tg .tg-h60y{background-color:#D8D8D8;text-align:left;vertical-align:bottom}
+.tg .tg-771h{background-color:#DBE5F1;text-align:left;vertical-align:bottom}
+@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}</style>
+<div class="tg-wrap"><table class="tg">
+<thead>
+  <tr>
+    <th class="tg-nxzy"><span style="background-color:#ffffff">Things used in this document</span></th>
+    <th class="tg-nxzy"><span style="background-color:#ffffff">Meaning</span></th>
+    <th class="tg-nxzy"></th>
+    <th class="tg-nxzy"></th>
+    <th class="tg-nxzy"><span style="background-color:#ffffff">Authors</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">→</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">right</span></td>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">ego-lay_atman-bay</span></td>
+  </tr>
+  <tr>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">←</span></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">left</span></td>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">-TSTD-</span></td>
+  </tr>
+  <tr>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">↑</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">up</span></td>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"></td>
+    <td class="tg-h60y"></td>
+  </tr>
+  <tr>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">↓</span></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">down</span></td>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"></td>
+  </tr>
+  <tr>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">?</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">missing information</span></td>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"></td>
+  </tr>
+  <tr>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">↺</span></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">counter-clockwise</span></td>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"></td>
+  </tr>
+  <tr>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">↻</span></td>
+    <td class="tg-h60y"><span style="background-color:#D8D8D8">clockwise</span></td>
+    <td class="tg-h60y"></td>
+    <td class="tg-h60y"></td>
+    <td class="tg-h60y"></td>
+  </tr>
+  <tr>
+    <td class="tg-771h"></td>
+    <td class="tg-771h"></td>
+    <td class="tg-771h"></td>
+    <td class="tg-771h"></td>
+    <td class="tg-771h"></td>
+  </tr>
+  <tr>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">Apply on :</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">Project URL</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">Scratch User</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">Forum (Level Code) :</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">Note</span></td>
+  </tr>
+  <tr>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">Super Mario Maker V.6 Beta</span></td>
+    <td class="tg-8i6y"><a href="https://scratch.mit.edu/projects/218481168/">https://scratch.mit.edu/projects/218481168/</a></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">by -TSTD-</span></td>
+    <td class="tg-8i6y"><a href="https://scratch.mit.edu/discuss/topic/298548/">https://scratch.mit.edu/discuss/topic/298548/</a></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1"> Some tag are missing but it is mostly complete</span></td>
+  </tr>
+  <tr>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">Expanded Super Mario Maker v.6</span></td>
+    <td class="tg-zvb1"><a href="https://scratch.mit.edu/projects/424176481/">https://scratch.mit.edu/projects/424176481/</a></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">by ego-lay_atman-bay</span></td>
+    <td class="tg-zvb1"><a href="https://scratch.mit.edu/discuss/topic/400334/">https://scratch.mit.edu/discuss/topic/400334/</a></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">Partially adapted</span></td>
+  </tr>
+</tbody>
+</table></div>
+
+<h3 id="table">Blocks table</h3>
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-1kx6{background-color:#D8D8D8;text-align:center;vertical-align:top}
+.tg .tg-kyly{background-color:#D8D8D8;text-align:center;vertical-align:middle}
+.tg .tg-m1l7{background-color:#FFF;position:-webkit-sticky;position:sticky;text-align:center;top:-1px;vertical-align:middle;
+  will-change:transform}
+.tg .tg-5v3h{background-color:#DBE5F1;text-align:center;vertical-align:middle}
+.tg .tg-ems3{background-color:#DBE5F1;text-align:center;vertical-align:top}
+.tg .tg-h60y{background-color:#D8D8D8;text-align:left;vertical-align:bottom}
+.tg .tg-771h{background-color:#DBE5F1;text-align:left;vertical-align:bottom}
+.tg .tg-qgt3{background-color:#DBE5F1;text-align:center;vertical-align:bottom}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-m1l7"><span style="background-color:#FFF">ID</span></th>
+    <th class="tg-m1l7"><span style="background-color:#FFF">Name</span></th>
+    <th class="tg-m1l7"><span style="background-color:#FFF">Tags</span></th>
+    <th class="tg-m1l7"><span style="background-color:#FFF">Expanded smmv.6 Tags</span></th>
+    <th class="tg-m1l7"><span style="background-color:#FFF">Only in Expanded smmv.6</span></th>
+    <th class="tg-m1l7"><span style="background-color:#FFF">Tag examples</span></th>
+    <th class="tg-m1l7"><span style="background-color:#FFF">Info</span></th>
+    <th class="tg-m1l7"><span style="background-color:#FFF">Author comment</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">***</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">***</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">***</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">***</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">***</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">***</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Block Dispawn Range are the same for all block ( to save some clones from the clone limit). Only 15 * 12 blocks are loaded at the same time</span></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Comon Block Tag</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">( CBT)</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{load:&lt;entity&gt;}</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">1{load:i1}</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Comon Block Tag</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">( CBT)</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{entity_load:§}</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">1{load:i1}{entity_load:false}</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Values : "yes" : the entity is already loaded ( so I won't load the entity twice), "no" (or anything else) : the entity is currently not loaded so it will spawn the entity on the block position</span></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">#</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Regular Block</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">***</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">***</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">***</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">***</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">***</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">***</span></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">0</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Air</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">1</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Ground</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{texture:§}</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{texture:1}</span><br></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Texture changes what theme the block looks by the specified number. e.g. if the current themeis overworld (1) and&nbsp;&nbsp;if the block has {texture:1} it changes to underground.</span></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{costume:}</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{costume:00011111}</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">go </span><a href="https://snap.berkeley.edu/project?user=ego-lay_atman-bay&project=ground%20costume%20generator" target="_blank" rel="noopener noreferrer">here</a><span style="background-color:#DBE5F1"> to get the code for the {costume:} tag</span></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">2</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Brick block</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{contain#:&lt;entity&gt;}</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{contain1:i1}{contain2:i2}{contain3:i1}...</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Contain index start at 1. In ego-lay_atman-bay's remix, put in coin to give mario a coin, not i0.</span></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">3</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Flip block</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{contain#:&lt;entity&gt;}</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{contain1:i1}{contain2:i2}{contain3:i1}...</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Super Mario Wold classic brick block version</span></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">4</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">?-Block</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{contain#:&lt;entity&gt;}</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{contain1:i1}{contain2:i2}{contain3:i1}...</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">5</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">hidden block</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{contain#:&lt;entity&gt;}</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{contain1:i1}{contain2:i2}{contain3:i1}...</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">6</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">invisible block</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">This block is solid, but invisible</span></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">7</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Hit Block</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">8</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Note block</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{contain#:&lt;entity&gt;}</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{contain1:i1}{contain2:i2}{contain3:i1}...</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">When the {contain#:} is there, and something hits it, the item will either, drop from the bottom (when hit from the top) or come up from the top (if it's hit from the bottom).</span></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{instrument:#}</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{instrument:1}</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">When you set the instrement tag, and(or) the note tag, it'll play that note with the instrement (piano if none specified) when something hits it.</span></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{note:#}</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{note:60}</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">9</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Spike</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{sprite:§}</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{sprite:up}</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">The options for the sprite tag are, "up", "down", "left", and "right".</span></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{costume:&lt;costume&gt;}</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{costume:note block 1}</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Enter a costume number or name (preferably name)</span></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">10</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Solid block</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Not an entity. Fixed on the grid. Can't move or fall. For a solid block that can move on tracks, see entity b7</span></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">11</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Bridge</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{sprite:#}</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{sprite:2}</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">The sprite tag specifies the bridge type, and the </span><br><span style="background-color:#D8D8D8">numbers range from 1-4</span></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">12</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">13</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Cloud</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">14</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Cloud 2</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">.</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">This one is different, you'll see. It have an "Auto tiling" system for sprite</span></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">15</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Green Mushroom Platform</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">like a semisolid platform</span></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">16</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Yellow Mushroom Platform</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">like a semisolid platform</span></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">17</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Red Mushroom Platform</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">like a semisolid platform</span></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">18</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Purple Mushroom Platform</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">like a semisolid platform, but this one is bouncy</span></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">19</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Mushroom Platform Support</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">this is just a background block</span></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">20</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Pipe</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{color:&lt;color&gt;}</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{color:red}</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">colors include green purple yellow, and red</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">No warp pipe. You can't enter them.(similar : see the door block id: 29 )</span></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{texture:}</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-1kx6"><span style="font-style:normal;color:#000">you can get the value for the texture tag </span><a href="https://snap.berkeley.edu/project?user=ego-lay_atman-bay&project=ground%20costume%20generator">here</a></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{costume:}</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-ems3"><span style="font-style:normal;color:#000">you can get the value for the texture tag </span><a href="https://snap.berkeley.edu/project?user=ego-lay_atman-bay&project=ground%20costume%20generator">here</a><span style="font-style:normal;color:#000"> (it uses the texture tag, but you can use the costume tag if you want)</span></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">21 / 22</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Bill Blaster &amp; Red bill blaster</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{contain:&lt;entity&gt;}</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{contain:e2}</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">The contain tag specifies what shoots out of the blaster,</span><br><span style="background-color:#D8D8D8">default is e15 (bullet bill) for id 21 (regular blaster) and e16 (red bullet bill) for id 22 (red bill blaster)</span></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{time:#[tick]}</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{time:20}</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Blast frequency in tick. Time specifies the amount of tick (frames) it waits between blasts. Default value is 96 ticks</span></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{delay:#[tick]}</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{delay:3}</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Delay when shooting. If several bill blaster have the same "delay" value and the same "time" value, then they will blast at the same time. Change this value to desynchronize them.</span></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{speed_x:#[meter?]}</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{speed_x:0.2}</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">X speed the entity gets when shot out</span></td>
+    <td class="tg-ems3"><span style="font-style:normal;color:#000">more on speed_x and fall_y in the </span><a href="https://ego-lay-atman-bay.github.io /tables/entities#speed_x">entity section</a></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{fall_y:#[meter?]}</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{fall_y:0.4}</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Y speed the entity gets when shot out</span></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">23</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Vine</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">You can climb on this press up or w</span></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">24</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Donut Block</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{time_fall:#[tick]}</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{time_fall:10} </span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Falls if you stand on it for a given amount of time</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8"> btw, when it falls, it really just dissapears, and</span><br><span style="background-color:#D8D8D8">spawns an entity (b5{movement:wait}{length:1}{falling:yes}} ) </span><br><span style="background-color:#D8D8D8">which you can specify using the fall tag</span></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1"> {fall:&lt;entity&gt;}</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{fall:b7}</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Entity spawned when falling</span></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">25</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Pow</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{x-:#[m]}</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-h60y"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{x-:10}</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Kills all enemies on screen (including muncher) when hit.</span><br><span style="background-color:#D8D8D8">The x- tag specifies the amount of blocks to the right to kill enemies.</span></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{x+:#[m]}</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-771h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{x+:10}</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">The x+ tag specifies the amount of blocks to the left to kill enemies.</span></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{y-:#[m]}</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{y-:10}</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">The y- tag specifies the amount of blocks below the pow to kill enemies.</span></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{y+:#[m]}</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{y+:10}</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">The y+ tag specifies the amount of blocks above the pow to kill enemies.</span></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">26</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Conveyor Belt</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{speed:#[meter/tick]}</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8"> {speed:0.06}</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Conveyor Belt moving speed. Negative : ←</span><br><span style="background-color:#D8D8D8">positive : →. Default value is -1/16 = -0.0625 (or just 0.06)</span></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1" id='door'>27</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Semi-Solid Platform Top</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{texture:#}</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{texture:3}</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Texture tag values range from 1-14. Each number represent a game style ( castle, forest, underground… )</span></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">28</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Semisolid Platform Background</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{texture:#}</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{texture:3}</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Texture tag values range from 1-14.</span></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">29 / 30 /31</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Door &amp; P-Door &amp; Key-Door</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{x:#[meter]}</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{x:17}</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Set Mario's current X position to this number</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Press space, Q or E</span><br><span style="background-color:#DBE5F1">to enter, press Up or W in my remix). You do not need</span><br><span style="background-color:#DBE5F1">a door at the position the door leads.</span></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{y:#[meter]}</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{y:9}</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Set Mario's current Y position to this number</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">you don't need a p-switch activated to enter a P-Door, but that will be added into ego-lay_atman-bay's remix sometime.</span></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{x+:#[meter]}</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{x+:8}</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Increase Mario's current X position by that number</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">You need to have a key to enter a Key-Door</span></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{y+:#[meter]}</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{y+:4}</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Increase Mario's current Y position by that number</span></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{switch:#}</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{switch:2}</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">The switch tag specifies the transition, numbers range </span><br><span style="background-color:#DBE5F1">from 1-4</span></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{level:#}</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{level:2}</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Switches to another sub-level. Type in "back" to go back a level.</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Sub-levels are only in ego-lay_atman-bay's remix</span></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">32</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Coin</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Not an entity. Fixed on the grid. Can't move or fall, turns into i0 when a pow is hit</span></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">33</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">34</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">35</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">36</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">37</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Fence</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">You can climb on this.</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Press Up or W to climb</span></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">38</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Muncher</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Entities can walk on this</span><br><span style="background-color:#DBE5F1">Yoshi in ego-lay_atman-bay's remix can also walk on this</span></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">39</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Right one-way wall</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">YOU SHALL NOT PASS !</span></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">40</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Left one-way wall</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">YOU SHALL NOT ADVANCE !</span></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">41</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Up one-way wall</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">YOU SHALL NOT FALL !</span></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">42</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Down one-way wall</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">YOU SHALL NOT JUMP !</span></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">43</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Lava/Poison</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{type:#}</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">yes</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{type:2}</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Only available in ego-lay_atman-bay's remix</span><br><span style="background-color:#D8D8D8">type 1 is lava, and type 2 is poison</span></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">44</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Cannon</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{contain:&lt;entity&gt;}</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{contain:i1}</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">The entity that comes out of the cannon</span></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{direction:#[°]}</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8"> {direction:90}</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">The direction the cannon is facing</span></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{size:#[%]}</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{size:200}</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Size changes the size of the cannon (does not affect </span><br><span style="background-color:#DBE5F1">the hitbox)</span></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{type:#}</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{type:2}</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8"> type specifies the type, numbers range from 1-6. type 1 is normal. 2 always points towards mario. 3 rotates with a speed specified by the tag1 tag and shoots. 4 rotates a bit, 5 rotates a number of degrees specified by the tag1 tag after each time it shoots</span></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{number:#}</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{number:4}</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">the number tag specifies the number of entities that shoot out, the angle_shoot tag specifies the angle they shoot at, default is 45</span></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{angle_shoot:#[°]}</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{angle_shoot:90}</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{tag1:#}</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{tag1:2}</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8"> {tag2:#}</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{tag2:2}</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{power:#}</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{power:0.3}</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">The speed the entity gets when shot out</span></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{color:&lt;color&gt;}</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{color:red}</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Two values, "red", and "black". Black is normal </span><br><span style="background-color:#D8D8D8">cannon. Red changes the color of the cannon to red, which also changes the cannonball that gets shot out to red, which moves faster</span></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">46</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Arrow</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{direction:#[°]}</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">yes</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{direction:180}</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Only available in my remix</span></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">47</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Track</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{load:&lt;entity&gt;}</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{load:e2}</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">This is a track, and when an entity is loaded on,</span><br><span style="background-color:#D8D8D8">the entity moves on it. Don't put the load tag on</span><br><span style="background-color:#D8D8D8">to not make it load more entities.</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Some of the Common Entity Tag (CET)&nbsp;&nbsp;are related to track</span></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">48</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Open Track</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{load:&lt;entity&gt;}</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1"> {load:e2}</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">When an entity gets to the end of this track, it falls off and when the entity hits another track, it goes onto that one</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">The {load:} tag is the most useful with tracks</span></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">49</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Propeller Box</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Acts like normal ground, but when hit from the bottom,</span><br><span style="background-color:#D8D8D8">mario gains a propeller box and he can propel upward.</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Use Q, E, or Space (you can also press Z in ego-lay_atman-bay's remix) to use it</span></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">50</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Checkpoint</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{powerup:#}</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">yes</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{powerup:2}</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Only avalible in ego-lay_atman-bay's remix. When mario activates this, then later dies, he respawns at the last activated checkpoint. If there's the powerup tag, it'll give mario the powerup</span><br><span style="background-color:#DBE5F1">when mario activates it, go to the powerup section (coming </span><br><span style="background-color:#DBE5F1">soon) to see what number to put in the tag</span></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">51</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Music</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{music:#}</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">yes</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{music:3}</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Only available in ego-lay_atman-bay's remix. When mario touches it, it changes the music to the specified music, music numbers in the music section. Note:&nbsp;&nbsp;This is invisible when playing</span></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">52</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Moving platform</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{contain:&lt;entity&gt;}</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{contain:b5{x_speed:2}{x_length:10}}</span></td>
+    <td class="tg-ems3"><span style="font-style:normal;color:#000">Spawns the entity specified, b5 is the default value</span><br><span style="font-style:normal;color:#000">see the </span><a href="https://ego-lay-atman-bay.github.io /tables/entities#b5">entity section</a><span style="font-style:normal;color:#000"> to find out how to customize</span><br><span style="font-style:normal;color:#000">the moving platform (b5)</span></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">53</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Burner</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{contain:&lt;entity&gt;}</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{contain:b4}</span></td>
+    <td class="tg-1kx6"><span style="font-style:normal;color:#000">Spawns the entity specified, b4 is the default value</span><br><span style="font-style:normal;color:#000">see the </span><a href="https://ego-lay-atman-bay.github.io /tables/entities#b4">entity section</a><span style="font-style:normal;color:#000"> to find out how to customize</span><br><span style="font-style:normal;color:#000">the burner (b4)</span></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">54</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Red On/Off Switch</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">yes</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">When hit, it turns blue dotted line blocks solid, and </span><br><span style="background-color:#DBE5F1">red blocks non-solid, and vice versa. It also changes the direction of on/off conveyors</span></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">55</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Blue Dotted Line Block</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">yes</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">When the on/off switch is off, this is just a non-solid</span><br><span style="background-color:#D8D8D8">dotted outline of a block, when the on/off switch is on,</span><br><span style="background-color:#D8D8D8">it's a solid blue block</span></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">56</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Red Dotted Line Block</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">yes</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">When the On/Off Switch is On, this is just a non-solid</span><br><span style="background-color:#DBE5F1">dotted outline of a block, when the On/Off Switch is Off,</span><br><span style="background-color:#DBE5F1">it's a solid blue block</span></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">57</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Green On/Off Switch</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">yes</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">When hit, it turns green Dotted Line Block solid, and </span><br><span style="background-color:#D8D8D8">yellow blocks non-solid, andvice versa. It also changes the direction of On/Off Conveyors</span></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">58</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Green Dotted Line Block</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">yes</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">When the On/Off Switch is Off, this is just a non-solid</span><br><span style="background-color:#DBE5F1">dotted outline of a block, when the On/Off Switch is on,</span><br><span style="background-color:#DBE5F1">it's a solid blue block</span></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">59</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Yellow Dotted Line Block</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">yes</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">When the On/Off switch is on, this is just a non-solid</span><br><span style="background-color:#D8D8D8">dotted outline of a block, when the On/Off Switch is Off,</span><br><span style="background-color:#D8D8D8">it's a solid blue block</span></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">60</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Red On/Off Conveyor</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{speed:#[meter/tick]}</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">yes</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1"> {speed:0.125}</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Conveyor Belt moving speed. Negative : ←</span><br><span style="background-color:#DBE5F1">positive : →. Default value is -1/16 = -0.0625 (or just 0.06).</span><br><span style="background-color:#DBE5F1">When the Red On/Off Switch is on, it moves the direction</span><br><span style="background-color:#DBE5F1">that is specified in the speed tag, and when the Red On/Off</span><br><span style="background-color:#DBE5F1">Switch is off, it goes in the opposite direction</span></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">61</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Command Block</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">See the command block</span><br><span style="background-color:#D8D8D8">section</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">yes</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">See the command block section</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Finalllllllyyyyyy!</span></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">62</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Green On/Off Conveyor</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{speed:#[meter/tick]}</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">yes</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1"> {speed:0.125}</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Conveyor Belt moving speed. Negative : ←</span><br><span style="background-color:#DBE5F1">positive : →. Default value is -1/16 = -0.0625 (or just 0.06).</span><br><span style="background-color:#DBE5F1">When the Green On/Off Switch is On, it moves the direction</span><br><span style="background-color:#DBE5F1">that is specified in the speed tag, and when the Green On/Off</span><br><span style="background-color:#DBE5F1">Switch is Off, it goes in the opposite direction</span></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">63</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Timer Block</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{time:#[second]}</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">yes</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{time:200}</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">When mario touches this, it adds the number </span><br><span style="background-color:#D8D8D8">specified in the time tag to the timer, default value is 100</span></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">64</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Goal</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">65</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Secret Exit</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">66</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">67</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">68</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Bush</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">69</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Spinning Spin Block</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Yup, this is a seperate block</span></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">70</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Character Block</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{costume:#}</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">yes</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{costume:1}</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">When mario hits this block, mario changes to the</span><br><span style="background-color:#DBE5F1">costume specified in the costume tag, numbers range</span><br><span style="background-color:#DBE5F1">from 0-3, 0 is mario, 1 is luigi, 2 is toad, 3 is toadette, 4 is sonic</span><br><span style="background-color:#DBE5F1">more is coming</span></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">71</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Mario Dotted Line Block</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">yes</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">When playing as mario, this block is not solid</span><br><span style="background-color:#D8D8D8">when not playing as mario, it is solid</span></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">72</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Luigi Dotted Line Block</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">yes</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">When playing as luigi, this block is not solid</span><br><span style="background-color:#DBE5F1">when not playing as luigi, it is solid</span></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">73</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Toad Dotted Line Block</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">yes</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">When playing as toad, this block is not solid</span><br><span style="background-color:#D8D8D8">when not playing as toad, it is solid</span></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">74</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Toadette Dotted Line Block</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">yes</span></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">When playing as toadette, this block is not solid</span><br><span style="background-color:#DBE5F1">when not playing as toadette, it is solid</span></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">75</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Sonic Dotted Line Block</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">yes</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">When playing as sonic, this block is not solid</span><br><span style="background-color:#D8D8D8">when not playing as sonic, it is solid</span></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">76</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Star Door</span></td>
+    <td class="tg-771h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{x:#[meter]}</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">yes</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{x:17}</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Set Mario's current X position to this number</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Press space, Q or E</span><br><span style="background-color:#DBE5F1">to enter, press Up or W in my remix). You do not need</span><br><span style="background-color:#DBE5F1">a door at the position the door leads.</span></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-h60y"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{y:#[meter]}</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">yes</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{y:9}</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Set Mario's current Y position to this number</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">you don't need a p-switch activated to enter a P-Door, but that will be added into ego-lay_atman-bay's remix sometime.</span></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-771h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{x+:#[meter]}</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">yes</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{x+:8}</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">Increase Mario's current X position by that number</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">You need to have a key to enter a Key-Door</span></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-h60y"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{y+:#[meter]}</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">yes</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{y+:4}</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Increase Mario's current Y position by that number</span></td>
+    <td class="tg-kyly"></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"></td>
+    <td class="tg-5v3h"></td>
+    <td class="tg-771h"></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{switch:#}</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">yes</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">{switch:2}</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">The switch tag specifies the transition, numbers range </span><br><span style="background-color:#DBE5F1">from 1-4</span></td>
+    <td class="tg-5v3h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{level:#}</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">yes</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">{level:2}</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Switches to another sub-level. Type in "back" to go back a level.</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">Sub-levels are only in ego-lay_atman-bay's remix</span></td>
+  </tr>
+  <tr>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">77</span></td>
+    <td class="tg-5v3h"><span style="background-color:#DBE5F1">P-Switch Block</span></td>
+    <td class="tg-771h"></td>
+    <td class="tg-771h"></td>
+    <td class="tg-771h"></td>
+    <td class="tg-771h"></td>
+    <td class="tg-qgt3"><span style="background-color:#DBE5F1">When hit, turns on the p-switch</span></td>
+    <td class="tg-771h"></td>
+  </tr>
+  <tr>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">78</span></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">P-Switch Block off</span></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"></td>
+    <td class="tg-kyly"><span style="background-color:#D8D8D8">The off version of the p-switch block. Turns into a p-switch block (on) if the p-switch is off.</span></td>
+    <td class="tg-h60y"></td>
+  </tr>
+</tbody>
+</table>
+
+</body>
+</html>

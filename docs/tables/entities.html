@@ -1,0 +1,2783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SMM v.6 Entity Id Table</title>
+</head>
+<body>
+
+<h3>Key</h3>
+
+<p><a href=" /tables">See other tables</a><p>
+<p>Click <a href="#table">here</a> to go directly to the id table</p>
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-knln{background-color:#ffffff;position:-webkit-sticky;position:sticky;text-align:left;top:-1px;vertical-align:middle;
+  will-change:transform}
+.tg .tg-mlbv{background-color:#DBE5F1;text-align:left;vertical-align:middle}
+.tg .tg-wkbc{background-color:#D8D8D8;text-align:left;vertical-align:middle}
+@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}</style>
+<div class="tg-wrap"><table class="tg">
+<thead>
+  <tr>
+    <th class="tg-knln"><span style="background-color:#ffffff">Things in tag</span></th>
+    <th class="tg-knln"><span style="background-color:#ffffff">Meaning</span></th>
+    <th class="tg-knln"><span style="background-color:#ffffff">Information</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">#</span></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">number</span></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">number like 0, 1, 2… can be decimal like 0.5</span></td>
+  </tr>
+  <tr>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">§</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">string (a text chain)</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">string don't need quote</span></td>
+  </tr>
+  <tr>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">?</span></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">unknow value type</span></td>
+    <td class="tg-mlbv"></td>
+  </tr>
+  <tr>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">&lt;entity&gt;</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">entity id+tag</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">ex : e1{size:200}</span></td>
+  </tr>
+  <tr>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">#[%]</span></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">number in %. ( 100 mean 100%)</span></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">number in %. 100 mean 100%</span></td>
+  </tr>
+  <tr>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">#[m]</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">number in meter</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">1 meter = 1 block</span></td>
+  </tr>
+  <tr>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">#[px]</span></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">number in px</span></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">16 px = 1 block. Divide a px by 16 and you get meter</span></td>
+  </tr>
+  <tr>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">#[tick]</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">number in tick</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">The game inside time. The game run by default at 19 tick pers second. This value can be changed later on when pressing P when playing</span></td>
+  </tr>
+  <tr>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">#[°]</span></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">number in degree °</span></td>
+    <td class="tg-mlbv"></td>
+  </tr>
+  <tr>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">#[coef]</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">number. Coefficient</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">similar to % but 1 mean 100% instead of 100. (rarely used)</span></td>
+  </tr>
+  <tr>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">#[px/tick]</span></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">number in px/tick</span></td>
+    <td class="tg-mlbv"></td>
+  </tr>
+</tbody>
+</table></div>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-8i6y{background-color:#DBE5F1;color:#00E;text-align:left;text-decoration:underline;vertical-align:top}
+.tg .tg-zvb1{background-color:#D8D8D8;color:#00E;text-align:left;text-decoration:underline;vertical-align:top}
+.tg .tg-nxzy{background-color:#ffffff;position:-webkit-sticky;position:sticky;text-align:left;top:-1px;vertical-align:middle;
+  will-change:transform}
+.tg .tg-wkbc{background-color:#D8D8D8;text-align:left;vertical-align:middle}
+.tg .tg-mlbv{background-color:#DBE5F1;text-align:left;vertical-align:middle}
+.tg .tg-h60y{background-color:#D8D8D8;text-align:left;vertical-align:bottom}
+.tg .tg-771h{background-color:#DBE5F1;text-align:left;vertical-align:bottom}
+@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}</style>
+<div class="tg-wrap"><table class="tg">
+<thead>
+  <tr>
+    <th class="tg-nxzy"><span style="background-color:#ffffff">Things used in this document</span></th>
+    <th class="tg-nxzy"><span style="background-color:#ffffff">Meaning</span></th>
+    <th class="tg-nxzy"></th>
+    <th class="tg-nxzy"></th>
+    <th class="tg-nxzy"><span style="background-color:#ffffff">Authors</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">→</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">right</span></td>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">ego-lay_atman-bay</span></td>
+  </tr>
+  <tr>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">←</span></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">left</span></td>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">-TSTD-</span></td>
+  </tr>
+  <tr>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">↑</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">up</span></td>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"></td>
+    <td class="tg-h60y"></td>
+  </tr>
+  <tr>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">↓</span></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">down</span></td>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"></td>
+  </tr>
+  <tr>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">?</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">missing information</span></td>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"></td>
+  </tr>
+  <tr>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">↺</span></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">counter-clockwise</span></td>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"></td>
+  </tr>
+  <tr>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">↻</span></td>
+    <td class="tg-h60y"><span style="background-color:#D8D8D8">clockwise</span></td>
+    <td class="tg-h60y"></td>
+    <td class="tg-h60y"></td>
+    <td class="tg-h60y"></td>
+  </tr>
+  <tr>
+    <td class="tg-771h"></td>
+    <td class="tg-771h"></td>
+    <td class="tg-771h"></td>
+    <td class="tg-771h"></td>
+    <td class="tg-771h"></td>
+  </tr>
+  <tr>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">Apply on :</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">Project URL</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">Scratch User</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">Forum (Level Code) :</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">Note</span></td>
+  </tr>
+  <tr>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">Super Mario Maker V.6 Beta</span></td>
+    <td class="tg-8i6y"><a href="https://scratch.mit.edu/projects/218481168/">https://scratch.mit.edu/projects/218481168/</a></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">by -TSTD-</span></td>
+    <td class="tg-8i6y"><a href="https://scratch.mit.edu/discuss/topic/298548/">https://scratch.mit.edu/discuss/topic/298548/</a></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1"> Some tag are missing but it is mostly complete</span></td>
+  </tr>
+  <tr>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">Expanded Super Mario Maker v.6s</span></td>
+    <td class="tg-zvb1"><a href="https://scratch.mit.edu/projects/424176481/">https://scratch.mit.edu/projects/424176481/</a></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">by ego-lay_atman-bay</span></td>
+    <td class="tg-zvb1"><a href="https://scratch.mit.edu/discuss/topic/400334/">https://scratch.mit.edu/discuss/topic/400334/</a></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">Partially adapted</span></td>
+  </tr>
+</tbody>
+</table></div>
+
+<h3 id="table">Enities</h3>
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-x1ny{background-color:#FFF;border-color:inherit;position:-webkit-sticky;position:sticky;text-align:left;top:-1px;
+  vertical-align:middle;will-change:transform}
+.tg .tg-tg8l{background-color:#DBE5F1;border-color:inherit;text-align:right;vertical-align:middle}
+.tg .tg-2ft8{background-color:#DBE5F1;border-color:inherit;text-align:left;vertical-align:bottom}
+.tg .tg-drd9{background-color:#D8D8D8;border-color:inherit;text-align:left;vertical-align:middle}
+.tg .tg-h0ga{background-color:#DBE5F1;border-color:inherit;text-align:left;vertical-align:middle}
+.tg .tg-ty20{background-color:#D8D8D8;border-color:inherit;text-align:right;vertical-align:middle}
+.tg .tg-onx2{background-color:#DBE5F1;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-yd2v{background-color:#D8D8D8;border-color:inherit;text-align:left;vertical-align:bottom}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-x1ny"><span style="background-color:#FFF">ID</span></th>
+    <th class="tg-x1ny"><span style="background-color:#FFF">Name</span></th>
+    <th class="tg-x1ny"><span style="background-color:#FFF">Tags</span></th>
+    <th class="tg-x1ny"><span style="background-color:#FFF">Expanded smmv.6 tags</span></th>
+    <th class="tg-x1ny"><span style="background-color:#FFF">Only in Expanded smmv.6</span></th>
+    <th class="tg-x1ny"><span style="background-color:#FFF">Tag examples</span></th>
+    <th class="tg-x1ny"><span style="background-color:#FFF">Info</span></th>
+    <th class="tg-x1ny"><span style="background-color:#FFF">Default Dispawn Range (px)</span></th>
+    <th class="tg-x1ny"><span style="background-color:#FFF">Author comment</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-drd9">Common Entity Tag (CET)</td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">CET are tags that work on most entities. It doesn't mean that those tags work for all entities, but they work for a lot of them</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Common Entity Tag (CET)</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{x:#[meter]}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{x:17}</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">x position in meter. Automatically generated when loading the block. Override it can allow weird spawning behavior</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Common Entity Tag (CET)</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{y:#[meter]}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{y:09}</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">y position in meter. Automatically generated when loading the block. Override it can allow weird spawning behavior</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Common Entity Tag (CET)</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{size:#[%]}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{size:100}</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">size is in %. 100 = normal size</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Common Entity Tag (CET)</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{fall:#[px/tick]}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{fall:8}</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">max fall speed in px/tick. Positive value : ↓. Negative value ↑</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Common Entity Tag (CET)</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{weight:#[px/tick]}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{weight:0.5}</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">fall decrease value in px/tick. Positive value : ↓. Negative value ↑. Use negative value to make the entity fly (or fall to the top of the screen)</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Sorry for that. Some tag aren't "normalized" everywhere</span></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Common Entity Tag (CET)</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{speed:#[px]}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{speed:2}</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">entity moving speed in px/tick</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Common Entity Tag (CET)</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{direction:?}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{direction:right}</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">possible values : "right", "left", or sometime it is a number 1 (right) or 0 (left)</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Common Entity Tag (CET)</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{dispawn:#[px]}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{dispawn:32}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Common Entity Tag (CET)</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{on_track:§}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{on_track:yes}</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Values : "yes, "no"</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Common Entity Tag (CET)</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{direction_track:#[°]}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{direction_track:90}</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">90° = →.&nbsp;&nbsp;-90° = ← . 0° = ↑. 180 = ↓ . Apply to entity on track</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga" id="speed_x"><span style="background-color:#DBE5F1">Common Entity Tag (CET)</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{speed_track:#[px/tick]}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{speed_track:0.2}</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1"> Speed when on track . Apply to entity on track</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Common Entity Tag (CET)</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{speed_x:#[m]}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{speed_x:0.2}</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">The speed it moves</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Common Entity Tag (CET)</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{fall_y:#[m]}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{fall_y:0.2}</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">The speed it falls</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">e#</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Entity</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">***</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">***</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">***</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">***</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">***</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">***</span></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">e1</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Piranha Plant</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-ty20"><span style="background-color:#D8D8D8">96</span></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">e2</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Goomba</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{jump_tick:#[tick]}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{jump_tick:20}</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Turns into a paragoomba with this tag. It waits the specified tick, and jumps, and repeats.</span></td>
+    <td class="tg-tg8l"><span style="background-color:#DBE5F1">128</span></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{hp:#}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{hp:3}</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">number of hits the goomba can endure before he died</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{costume:#}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{costume:1}</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">1 is pumpkin face goomba</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{direction:#}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{direction:1}</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">0 = →. 1&nbsp;&nbsp;= ←</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">e3</span></td>
+    <td class="tg-onx2"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{type:§}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{type:red}</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">possible values : "green", "red" . Red koopa doesn't fall on the edge of ground</span></td>
+    <td class="tg-tg8l"><span style="background-color:#DBE5F1">128</span></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{direction:#}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{direction:1}</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">0 = →. 1&nbsp;&nbsp;= ←</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{speed:#[m]}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{speed:0.2}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">e4</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Koopa Shell</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{type:§}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{type:red}</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">possible values : "green", "red", and ??? *secret*</span></td>
+    <td class="tg-ty20"><span style="background-color:#D8D8D8">128</span></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-2ft8"><span style="color:#000;background-color:#DBE5F1">{direction:#}</span></td>
+    <td class="tg-2ft8"></td>
+    <td class="tg-2ft8"></td>
+    <td class="tg-2ft8"><span style="color:#000;background-color:#DBE5F1">{direction:1}</span></td>
+    <td class="tg-2ft8"><span style="color:#000;background-color:#DBE5F1">0 = →. 1&nbsp;&nbsp;= ←</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">e5</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Parakoopa</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{type:§}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Do not use the {size:} tag with this id, unless you're in ego-lay_atman-bay's remix</span></td>
+    <td class="tg-ty20"><span style="background-color:#D8D8D8">320</span></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{x_speed:#}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{x_max:#}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{y_speed:#}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{y_max:#}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">e6</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Spiny</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{direction:#}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{direction:1}</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">0 = →. 1&nbsp;&nbsp;= ←</span></td>
+    <td class="tg-tg8l"><span style="background-color:#DBE5F1">96</span></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">e7</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Hammer Brother</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{type:§}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-ty20"><span style="background-color:#D8D8D8">160</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Who don't like Hammer Bro ?</span></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{delay_shoot:#[tick]}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{delay_shoot:4}</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Delay when shooting. If several hammer bros have the same "time_shoot" value and the same "delay_shoot" value, then they will shoot at the same time. Change this value to desynchronize them.</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{time_shoot:#[tick]}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{time_shoot:8}</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Time shoot hammer frequency in tick. Low number close and &gt;= to 1 means high frequency.</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{jump_time:#[tick]}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{jump_time:32}</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Jump frequency in tick. Make the hammer brother jump each X tick</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{contain:&lt;entity&gt;}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{contain:i1}</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Hammer bro throws the id in this tag</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">e8</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Bloopers</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{slide:#[coef]}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{slide:0.5}</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Bloopers X velocity are multiply by this value each tick</span></td>
+    <td class="tg-tg8l"><span style="background-color:#DBE5F1">96</span></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{tick_slide:#[tick]}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{tick_slide:64}</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Slide frequency in tick</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{delay_slide:#[tick]}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{delay_slide:17}</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Delay when sliding. ( Similar to Hammer Brother "delay_shoot" tag)</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{angle:#[°]}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{angle:45}</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Slide angle in °</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">e9</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Boo</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{ghost_effect:#[px]}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{ghost_effect:75}</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Ghost transparency effect. 100 = invisible. 0 = visible</span></td>
+    <td class="tg-tg8l"><span style="background-color:#DBE5F1">256</span></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{ghost_effect_move:#[%]}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{ghost_effect_move:50}</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Ghost transparency effect when moving. 100 = invisible. 0 = visible</span><br><span style="background-color:#D8D8D8">PARTIALY BROKEN (fixed in ego-lay_atman-bay's remix)</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{ghost_effect_stop:#[%]}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{ghost_effect_stop:0}</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Ghost transparency effect when not moving. 100 = invisible. 0 = visible</span><br><span style="background-color:#DBE5F1">PARTIALY BROKEN (fixed in ego-lay_atman-bay's remix)</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{sway_speed:#[px]}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{sway:#[px]}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">e10</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Boo Circle</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{angle:#[°]}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{type:#}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{type:1}</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Boo circle have different way to rotate. Value from [1;6]</span></td>
+    <td class="tg-tg8l"><span style="background-color:#DBE5F1">192</span></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{speed:#}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{range:#[meter]}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{height:#[meter]}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{height_speed:#}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{width:#[meter]}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{width_speed:#}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">e11</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Red Cheep Cheep</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-yd2v"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">NOT CODED</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">e12</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Thwomp</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{rise:#[px/tick]}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{rise:8}</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Thomps velocity after smashing the ground (when they move up to get back where they where)</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{wait:#[tick]}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{wait:96}</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">When they detect the player below, they wait for X tick before smashing the ground</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{distance:#[meter]}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{distance:2}</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Extra X distance added (left and right) to their hitbox to know if the player are below them.</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">e13</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Yellow Cheep Cheep</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-yd2v"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">NOT CODED</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">e14</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-2ft8"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">NOT CODED</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">e15</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Bullet Bill</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{direction:§}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{direction:right}</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">left or right (no numbers here)</span></td>
+    <td class="tg-ty20"><span style="background-color:#D8D8D8">96</span></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">e16</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Red Bullet Bill</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{direction:§}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{direction:right}</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">left or right (no numbers here)</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">e17</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Lava Bubble</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{bound:#}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Speed it takes to go back up</span></td>
+    <td class="tg-ty20"><span style="background-color:#D8D8D8">224</span></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">e18</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Fuzzy</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{x_speed:#}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{x_height:#}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{y_speed:#}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{y_height:#}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">e19 / e20</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Burner Fire &amp; Blue Fire</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{time:#[tick]}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{time:#64}</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Fire duration</span></td>
+    <td class="tg-tg8l"><span style="background-color:#DBE5F1">128</span></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{angle:#[°]}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{angle:90}</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Fire angle</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{delay:#[tick]}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{turn:#}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">? Fire rotation/tick</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{turn_speed:#}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">?</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{type:#}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{type:2}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">e21</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-2ft8"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">NOT CODED</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">e22</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Lakitu</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{type:#}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{type:2}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-ty20"><span style="background-color:#D8D8D8">512</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">&lt;- for more fun. </span></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{tag1:#}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">? Sometime entity can have so many type that some tag can be used to store different stuff based on the type of the entity.</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{tag2:#}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">?</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{tag3:#}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">?</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{shoot_time:#[tick]}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{delay:#[tick]}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{contain:&lt;entity&gt;}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{contain:e1{size:200}}</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Lakitu throws the entity in this tag</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-2ft8"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{copy:§}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{copy:yes}</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Values : "yes", "no". If "yes" the lakitu will throw a perfect copy of itself if there is also a {contain:} tag with anything as the value</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">e23</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Saw</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{rotate:#[°]}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{rotate:1}</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">The speed it rotates, has no affect on gameplay (just a visual difference)</span></td>
+    <td class="tg-ty20"><span style="background-color:#D8D8D8">96</span></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">e24</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Bowser</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-2ft8"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">NOT CODED</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">e25</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-yd2v"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">NOT CODED</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">e26</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-2ft8"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">NOT CODED</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">e27</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-yd2v"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">NOT CODED</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">e28</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-2ft8"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">NOT CODED</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">e29</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-yd2v"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">NOT CODED</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">e30</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Bowser Jr</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{level:#}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{level:5}</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Difficulty level. Automatically adapt some other tag based on the number</span></td>
+    <td class="tg-tg8l"><span style="background-color:#DBE5F1">1024</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">&lt;- Come on, he is a boss !</span></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{hp:#}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{hp:6}</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">number of hit Bowser Jr can endure before he died</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{start_move:#}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{start_attack:#}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{attack_tick_#:#[tick]}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{attack_tick_1:32}</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Attack tick duration. The first # is the attack id</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{variant_#:#[tick]}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">?</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{jump:#[px]}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{jump_shell:#[px]}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{throw_contain:&lt;entity&gt;}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{throw_contain:i1}</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Bowser jr. throws this instead of hammers. Put "mario" for angled at mario, "less_x" for less speed, meaning less angle.</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">e31</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-yd2v"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">NOT CODED</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">e32</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Chargin Chuck</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{hp:#}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">number of hit the entity can endure before he died</span></td>
+    <td class="tg-tg8l"><span style="background-color:#DBE5F1">512</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">One of my favorite entity</span></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{type:§}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{type:jump}</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Values : "normal", "walk", "jump"</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{wall_hit:§}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{wall_hit:no}</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Possible values, "yes", "no". If yes, when it hits a wall, it will take damage, if no, it won't take damage.</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{direction_switch:§}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{direction_switch:no}</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Possible values, "yes", "no". If yes, it will always run toward mario, if no, it will only run toward mario when stopped.</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">i#</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Item</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">***</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">***</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">***</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">***</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">***</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">***</span></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">i0</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Coin</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{speed x:#[px/tick]}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">/!\ for some reason I put an space instead of a _ in the tag name</span></td>
+    <td class="tg-tg8l"><span style="background-color:#DBE5F1">192</span></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">i1</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Super Mushroom</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{direction:#}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">0 = →. 1&nbsp;&nbsp;= ←</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">i2</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">1-up</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{direction:#}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-2ft8"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{sonic:yes}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{sonic:yes}</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">When Mario touches this, he turns into sonic without getting another life</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">i3</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Mystery Mushroom</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{direction:#}</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">yes</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{direction:1}</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">0 = →. 1&nbsp;&nbsp;= ←</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{costume:#}</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">yes</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{costume:1}</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">0 = mario, 1 = luigi, 2 = toad, 3 = toadette. When this tag is not in the id, it will choose a random character.</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">i4</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Fire Flower</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Gives mario the fire flower powerup</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8" id="i6">i5</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Rotten Mushroom</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">yes</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Moves towards mario, can jump up to 2 blocks high, and when mario eats it, he will get damaged.</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">i6</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Spring</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{sprite:23}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{sprite:23}</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Custom sprite for spring. Can be changed to any entity sprite, even a bowser sprite! It takes the number that you put in, and does this calculation, ((6 * num) - 6) and adds that result to the costume number of the spring, which is 243 and if the type is horizontal, adds 3 to that number, and then switches costumes to that result.</span></td>
+    <td class="tg-tg8l"><span style="background-color:#DBE5F1">96</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Originally I was testing to add different skin for entity. I started with spring, and so I created this tag. At the end it is mainly used for troll usage ^^</span></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{type:§}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{type:horizontal}</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Values : "vertical", "horizontal"</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">i7</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Hammer</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{direction:§}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{direction:right}</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Possible values, "left", "right"</span></td>
+    <td class="tg-tg8l"><span style="background-color:#DBE5F1">64</span></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">i8</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Projectile</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{sprite:§}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{sprite:red}</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Values : "black", "red", "fire". Can be a canon bullet or a small fire flame</span></td>
+    <td class="tg-ty20"><span style="background-color:#D8D8D8">128</span></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{angle:#[°]}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">i9</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Key</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">i10</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Bouncy Cloud</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">One of my creation ^^</span></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">i11</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Mushroom/Fireflower</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{direction:#}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{direction:1}</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">When Mario is small, it is a mushroom. When Mario's big, it's a fireflower.</span><br><span style="background-color:#D8D8D8">0 = →. 1&nbsp;&nbsp;= ←</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">i12</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Yoshi Egg</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{contain:&lt;entity&gt;}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{contain:i1}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-tg8l"><span style="background-color:#DBE5F1">96</span></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{type:#}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{type:2}</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">1 is normal, 2 waits for Mario to touch it before hatching</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{wait:#[tick]}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{wait:64}</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Waiting time in tick before yoshi egg hatch</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">i13</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Yoshi</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-yd2v"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">PARTIALLY CODED</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">i14</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Feather</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-tg8l"><span style="background-color:#DBE5F1">128</span></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">i15</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">P-Switch</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">yes</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">When Mario jumps on it, it turns all coins to flip blocks and all flip blocks to coins for a certain amount of time. This item can be held.</span></td>
+    <td class="tg-ty20"><span style="background-color:#D8D8D8">96</span></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">i16</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Stone Block</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">yes</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Mario can hold this, but is also heavy, so mario can't jump as high</span></td>
+    <td class="tg-tg8l"><span style="background-color:#DBE5F1">96</span></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">i19</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Fireball</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{speed:#[m]}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{speed:0.1}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-ty20"><span style="background-color:#D8D8D8">96</span></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{direction:§}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{direction:left}</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Directions include left, right, and mario. If you set the value to "mario" it moves towards mario when loaded (does not change directions)</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{damage_mario:#}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{damage_mario:1}</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">1 to have it damage mario, don't put the tag to not damage mario</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">b#</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Block ( Entity )</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">***</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">***</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">***</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">***</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">b# entity can't be loaded normaly. Use 52{contain:&lt;entity&gt;} where &lt;entity&gt; start with b</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">***</span></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">b0</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Cannon</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{direction:#[°]}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">The cannon points in this direction</span></td>
+    <td class="tg-tg8l"><span style="background-color:#DBE5F1">192</span></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{type:#}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Number from 1-6, 1 is normal type, 2 always points towards mario, 3 rotates with a speed specified by the tag1 tag, 4 rotates a bit, 5 rotates a number of degrees specified by the tag1 tag after each time it shoots</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{tag1:#}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{tag2:#}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{wait:#[tick]}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Shoot frequency in tick</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{delay:#[tick]}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Shoot desynchronization in tick</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{power:#[coef]}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Speed the entity will get shot out.</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{contain:&lt;entity&gt;}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">The entity that will be shooted</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{number:#}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Number of entity shooted</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{color:§}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Values "red", "black". If the contain tag don't have value, then it check for the color of the bullet to load (i8)</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{angle_shoot:#[°]}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Angle multiple entities will get shot out.</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{wait:#[tick]}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{wait:20}</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">It will wait this amount of tick before shooting </span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{delay:#[tick]}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{delay:10}</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Amount of tick between shots</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">b1</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Spiky Ball</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{lenght:#}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">It is spelled wrong, but there's no changing it after a few years</span></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{type:#}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">1 = normal, 2 = sways back and forth, 3 = nothing</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{tag1:#}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{tag2:#}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{delay:#[tick]}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-yd2v"></td>
+    <td class="tg-yd2v"></td>
+    <td class="tg-yd2v"></td>
+    <td class="tg-yd2v"></td>
+    <td class="tg-yd2v"></td>
+    <td class="tg-yd2v"></td>
+    <td class="tg-yd2v"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">b2</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Fire Ball</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{range:#}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{tick+:#}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9" id="b4"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{direction:#}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{length_max:#}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">?</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">b3</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">NOT CODED</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">b4</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Burner</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{type:#}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-tg8l"><span style="background-color:#DBE5F1">128</span></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{rotate:#[°]}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{turn:#[°]}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{contain:&lt;entity&gt;}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{shoot:#[tick]}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{shoot_delay:#[tick]}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga" id="b5"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{delay:#[tick]}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">?</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{sprite:§}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Possible values, "red", "blue"</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">b5</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Platform</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">A bit complex to customize</span></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{type:§}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{type:normal}</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Values : "normal", "circle"</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{movement:§}</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">{movement:normal</span></td>
+    <td class="tg-onx2"><span style="font-style:normal;color:#000">See the <a href="#p_tags">platform tags</a> table </span><span style="color:#000">for movement values and more tags.</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">b6</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Goal tape</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{secret:§}</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Values : nothing : normal exit, "yes" : secret exit. (Forgot to code the "yes")</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+  <tr>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">b7</span></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Solid block</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"><span style="background-color:#DBE5F1">Like the solid block, but as an entity, which means that it can move on tracks</span></td>
+    <td class="tg-h0ga"></td>
+    <td class="tg-h0ga"></td>
+  </tr>
+  <tr>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">b8</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">Lava/Poison</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{type:#}</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">yes</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">{type:2}</span></td>
+    <td class="tg-drd9"><span style="background-color:#D8D8D8">1 = lava, 2 = poison</span></td>
+    <td class="tg-drd9"></td>
+    <td class="tg-drd9"></td>
+  </tr>
+</tbody>
+</table>
+
+<h3 id="p_tags">Platform Tags</h3>
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-bkpl{background-color:#FFF;position:-webkit-sticky;position:sticky;text-align:left;top:-1px;vertical-align:middle;
+  will-change:transform}
+.tg .tg-mlbv{background-color:#DBE5F1;text-align:left;vertical-align:middle}
+.tg .tg-wkbc{background-color:#D8D8D8;text-align:left;vertical-align:middle}
+@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}</style>
+<div class="tg-wrap"><table class="tg">
+<thead>
+  <tr>
+    <th class="tg-bkpl"><span style="background-color:#FFF">type</span></th>
+    <th class="tg-bkpl"><span style="background-color:#FFF">movement</span></th>
+    <th class="tg-bkpl"><span style="background-color:#FFF">tags</span></th>
+    <th class="tg-bkpl"><span style="background-color:#FFF">example</span></th>
+    <th class="tg-bkpl"><span style="background-color:#FFF">info</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">normal</span></td>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"></td>
+  </tr>
+  <tr>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">{length:#[m]}</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">{length:2}</span></td>
+    <td class="tg-wkbc"></td>
+  </tr>
+  <tr>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">normal</span></td>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"></td>
+  </tr>
+  <tr>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">{x_speed:#[px]}</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">{x_speed:3}</span></td>
+    <td class="tg-wkbc"></td>
+  </tr>
+  <tr>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">{y_speed:#[px]}</span></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">{y_speed:3}</span></td>
+    <td class="tg-mlbv"></td>
+  </tr>
+  <tr>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">{x_length:#[m]}</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">{x_length:10}</span></td>
+    <td class="tg-wkbc"></td>
+  </tr>
+  <tr>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">{y_length:#[m]}</span></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">{y_length:4}</span></td>
+    <td class="tg-mlbv"></td>
+  </tr>
+  <tr>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">x</span></td>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"></td>
+  </tr>
+  <tr>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">{x_speed:#[px]}</span></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">{x_speed:0.3}</span></td>
+    <td class="tg-mlbv"></td>
+  </tr>
+  <tr>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">{x_length:#[m]}</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">{x_length:10}</span></td>
+    <td class="tg-wkbc"></td>
+  </tr>
+  <tr>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">{tick_add:#[tick]}</span></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">{tick_add:10}</span></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">tick offset</span></td>
+  </tr>
+  <tr>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">y</span></td>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"></td>
+  </tr>
+  <tr>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">{y_speed:#[px]}</span></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">{y_speed:3}</span></td>
+    <td class="tg-mlbv"></td>
+  </tr>
+  <tr>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">{y_length:[m]}</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">{y_length:7}</span></td>
+    <td class="tg-wkbc"></td>
+  </tr>
+  <tr>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">{tick_add:[tick]}</span></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">{tick_add:10</span></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">tick offset</span></td>
+  </tr>
+  <tr>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">add</span></td>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"></td>
+  </tr>
+  <tr>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">{add_x:#[px]}</span></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">{add_x:2}</span></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">moves that speed on the x axis forever (or until unloaded)</span></td>
+  </tr>
+  <tr>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"><span style="color:#000;background-color:#D8D8D8">{add_y:#[px]}</span></td>
+    <td class="tg-wkbc"><span style="color:#000;background-color:#D8D8D8">{add_y:2}</span></td>
+    <td class="tg-wkbc"><span style="color:#000;background-color:#D8D8D8">moves that speed on the y axis forever (or until unloaded)</span></td>
+  </tr>
+  <tr>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">add_irregular</span></td>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">like the normal movement, but instead of turning around after slowing down, it keeps going.</span></td>
+  </tr>
+  <tr>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">{x_speed:#[m]}</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">{x_speed:0.2}</span></td>
+    <td class="tg-wkbc"></td>
+  </tr>
+  <tr>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">{y_speed:#[m]}</span></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">{y_speed:0.2}</span></td>
+    <td class="tg-mlbv"></td>
+  </tr>
+  <tr>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">{x_length:#[coef]}</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">{x_length:0.2}</span></td>
+    <td class="tg-wkbc"></td>
+  </tr>
+  <tr>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">{y_length:#[coef]}</span></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">{y_length:0.2}</span></td>
+    <td class="tg-mlbv"></td>
+  </tr>
+  <tr>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">wait</span></td>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"></td>
+  </tr>
+  <tr>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">{fall_max:#[px]}</span></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">{fall_max:2}</span></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">the speed it falls</span></td>
+  </tr>
+  <tr>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">{weight:#[px]}</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">{weight:2}</span></td>
+    <td class="tg-wkbc"></td>
+  </tr>
+  <tr>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">{falling:§}</span></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">{falling:yes}</span></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">possible values, "yes", "no". If yes, it starts out falling instead of waiting until mario stands on it</span></td>
+  </tr>
+  <tr>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">{speed:#?}</span></td>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">The speed it moves on tracks. Add the {speed_track:0} tag to make it not move until mario touches it. Larger numbers are slower than smaller numbers.</span></td>
+  </tr>
+  <tr>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">circle</span></td>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"></td>
+  </tr>
+  <tr>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">{length:#[m]}</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">{length:5}</span></td>
+    <td class="tg-wkbc"></td>
+  </tr>
+  <tr>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">normal</span></td>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"></td>
+  </tr>
+  <tr>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">{turn:#[°]}</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">{turn:2}</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">The value is the amount of degrees it turns ↻ per tick (so make it negative for ↺)</span></td>
+  </tr>
+  <tr>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">touch_press</span></td>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"></td>
+  </tr>
+  <tr>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">{turn:#[°]}</span></td>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"></td>
+  </tr>
+  <tr>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">modulo</span></td>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"></td>
+  </tr>
+  <tr>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">{turn:#[°]}</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">{turn:5}</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">The amount of degrees it turns ↻</span></td>
+  </tr>
+  <tr>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">{modulo:#[tick]}</span></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">{modulo:5}</span></td>
+    <td class="tg-mlbv"><span style="background-color:#DBE5F1">The amount of tick between each turn, default is 16</span></td>
+  </tr>
+  <tr>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">{delay:#[tick]}</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">{delay:10}</span></td>
+    <td class="tg-wkbc"><span style="background-color:#D8D8D8">The amount of tick plus the value in the modulo</span></td>
+  </tr>
+</tbody>
+</table></div>
+
+<br>
+<br>
+<p>A huge thanks to @-TSTD- for making the base table (and actually making it look good).</p>
