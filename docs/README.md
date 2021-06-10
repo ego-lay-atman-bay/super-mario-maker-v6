@@ -17,7 +17,7 @@ But even better, you can just play it on <a href="https://ego-lay-atman-bay.itch
 
 If it doesn't load, then download the project and load it in <a href="https://turbowarp.org">turbowarp<a>. If it doesn't load in turbowarp, then try loading it in <a href="https://desktop.turbowarp.org">turbowarp desktop<a>. Then if that doesn't work, try loading it in <a href="https://forkphorus.github.io">forkphorus<a>. If that doesn't work, try loading it in <a href="https://scratch.mit.edu/projects/editor/">scratch<a>. If that doesn't work, try htmlifying it with <a href="https://sheeptester.github.io/htmlifier/">htmlifer<a>. If that doesn't work, then idk what will.
 
-Here's the <a href=" /tables">id tables</a>.
+Here's the <a href="/super-mario-maker-v6/tables">id tables</a>.
 
 How to play:
 arrow keys or wasd to move around, crouch move left and right, press c or w to jump, press z, space or e to hold items (e.g. shells, p-switch, springs). Press up arrow or w to go through doors. press x to do a spin jump, press P to pause, G to restart the level (aka, die), F to toggle the FPS showing, and in editor mode, press C to show a list so you can copy the id/x and y that the cursor is currently on.
