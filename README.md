@@ -1,3 +1,3 @@
 # Expanded Super Mario Maker v.6
 
-<a href="super-mario-maker-v6.github.io">super-mario-maker-v6.github.io</a>
+<a href="https://ego-lay-atman-bay.github.io/super-mario-maker-v6/">https://ego-lay-atman-bay.github.io/super-mario-maker-v6/</a>
