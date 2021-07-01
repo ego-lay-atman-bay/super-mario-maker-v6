@@ -1,3 +1,3 @@
-# Expanded Super Mario Maker v.6
+# Building
 
-<a href="https://ego-lay-atman-bay.github.io/super-mario-maker-v6/">https://ego-lay-atman-bay.github.io/super-mario-maker-v6/</a>
+Compress all the files in the folder super mario maker v.6 v6.0.3 to a zip folder. Change the .zip file extension to .sb3.
