@@ -26,4 +26,4 @@ go <a href="https://scratch.mit.edu/discuss/post/3068052/">here</a> to see how t
 
 Please post the 3rd item of the list that shows up when you share a level in the forum.
 
-Website souce code is available on github <a href="https://github.com/super-mario-maker-v6/super-mario-maker-v6.github.io/tree/master/docs">here</a>
+Website souce code is available on github <a href="https://github.com/ego-lay-atman-bay/super-mario-maker-v6/tree/main/docs">here</a>
