@@ -19,8 +19,32 @@ If it doesn't load, then download the project and load it in <a href="https://tu
 
 Here's the <a href="/super-mario-maker-v6/tables">id tables</a>.
 
-How to play:
-arrow keys or wasd to move around, crouch move left and right, press c or w to jump, press z, space or e to hold items (e.g. shells, p-switch, springs). Press up arrow or w to go through doors. press x to do a spin jump, press P to pause, G to restart the level (aka, die), F to toggle the FPS showing, and in editor mode, press C to show a list so you can copy the id/x and y that the cursor is currently on.
+How to Play:
+Arrows keys or WASD to move around
+
+Crouch move left and right
+
+press c or w to jump, press z,
+
+space or e to hold items (e.g. shells, p-switch, springs).
+
+Press up arrow or w to go through doors.
+
+press x to do a spin jump,
+
+press P to pause,
+
+G to restart the level (aka, die), and in editor mode,
+
+press C to show a list so you can copy the id/x and y that the cursor is currently on.
+
+1) To share your level, click on Share, on the Clap. You need to clear it to get your level code and next share it. So when you play a level, it should be possible to clear.
+
+If you want save and continue a level later, here's an easy way:
+– Set the exit next to the spawn-point
+– Next, clear the level, and save your level code
+– When you want edit it, enter the level code in “Play a Level” ( Green Flag => Play => Play a Level ).
+– Finally, click on “Download” to open the level in the editor.
 
 go <a href="https://scratch.mit.edu/discuss/post/3068052/">here</a> to see how to use the editor.
 
