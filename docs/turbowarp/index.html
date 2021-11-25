@@ -205,7 +205,7 @@
       const {storage, vm} = scaffolding;
       storage.addWebStore(
         [storage.AssetType.ImageVector, storage.AssetType.ImageBitmap, storage.AssetType.Sound],
-        (asset) => new URL('assets/' + asset.assetId + '.' + asset.dataFormat, location).href
+        (asset) => new URL('https://ego-lay-atman-bay.github.io/super-mario-maker-v6/assets/' + asset.assetId + '.' + asset.dataFormat, location).href
       );
       storage.onprogress = (total, loaded) => {
         setProgress(0.2 + (loaded / total) * 0.78);
@@ -357,7 +357,7 @@
         }
       };
       xhr.responseType = 'arraybuffer';
-      xhr.open("GET", "assets/project.json");
+      xhr.open("GET", "https://ego-lay-atman-bay.github.io/super-mario-maker-v6/assets/project.json");
       xhr.send();
     });
   </script>
