@@ -1,0 +1,36 @@
+#top {
+    margin-left: 20px;
+    margin-bottom: -10px;
+}
+
+#blocks {
+    padding: 20px;
+    padding-bottom: 5px;
+    width: 500px;
+    height: 210px;
+}
+
+.id-text {
+    margin-left: 20px;
+    resize: none;
+}
+
+#color {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#pipes {
+    padding: 20px;
+    width: 500px;
+    height: 80px;
+    padding-bottom: 5px;
+}
+
+#pipeText {
+    margin-left: 20px;
+}
+
+#current-pipe {
+    margin-bottom: 40px;
+}

@@ -1,48 +1,48 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Ground/pipe texture tags</title>
-    </head>
-    <body>
-        <center>
-        
-        <p>Back to <a href='/super-mario-maker-v6'>Expanded smmv.6</a></p>
-        
-        <p style='margin-left: 20px;margin-bottom: -10px;'>Click on the block you want to get the id.</p>
-        <div id="blocks" style='padding: 20px;width: 500px;height: 210px;padding-bottom: 5px;'>
-        </div>
+<html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css">
+      <title>Ground/pipe texture tags</title>
+   </head>
+   <body>
+      <center>
+         <p>Back to <a href='/super-mario-maker-v6'>Expanded smmv.6</a></p>
+         <p id="top">Click on the block you want to get the id.</p>
 
-        <script src="scripts.js"></script>
+         <div id="blocks"></div>
 
-        <div>
+         <script src="scripts.js"></script>
+
+         <div>
             <p>Copy and paste this into Expanded smmv.6</p>
             <img id="selectedBlock" src="" width="32">
-            <textarea id="blockText" style="margin-left: 20px;">id will show up here</textarea>
-        </div>
+            <textarea readonly id="blockText" class="id-text" placeholder="id will show up here"></textarea>
+         </div>
 
-        <div style="margin-left: 20px;margin-top: 10px;">
+         <div id="color">
             <label>Color</label>
             <select name="colors" id="colors" onchange="setPipeColor(this.value)">
-              <option value="green">green</option>
-              <option value="blue">blue</option>
-              <option value="yellow">yellow</option>
-              <option value="red">red</option>
+               <option value="green">green</option>
+               <option value="blue">blue</option>
+               <option value="yellow">yellow</option>
+               <option value="red">red</option>
             </select>
-        </div>
-        <div id="pipes" style='padding: 20px;width: 500px;height: 80px;padding-bottom: 5px;'></div>
+         </div>
 
-        <div style="margin-bottom: 40px;">
+         <div id="pipes"></div>
+         <div id="current-pipe">
             <p>Copy and paste this into Expanded smmv.6</p>
             <img id="selectedPipe" src="" width="32">
-            <textarea id="pipeText" style="margin-left: 20px;">pipe id will show up here</textarea>
-        </div>
-
-        <script>
+            <textarea readonly id="pipeText" class="id-text" placeholder="pipe id will show up here"></textarea>
+         </div>
+         
+         <script>
             pipeColor = 'green'
             getBlocks()
             getPipe()
-        </script>
-    </body>
-</center>
+         </script>
+   </body>
+   </center>
 </html>

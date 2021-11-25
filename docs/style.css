@@ -1,0 +1,22 @@
+body {
+    background-color: #ffffff;
+}
+
+.center {
+    width: 480px;
+    margin: 24px auto 0;
+    padding-bottom: 24px;
+}
+
+.button {
+    margin: 10px;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0px;
+}
+
+summary {
+    cursor: pointer;
+}
+
