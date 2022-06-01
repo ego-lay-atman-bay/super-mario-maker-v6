@@ -5,19 +5,27 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="style.css">
       <title>Expanded Super Mario Maker v.6</title>
+      <script src="/assets/jquery-3.6.0.min.js"></script>
    </head>
    <body>
+       
+       <script src="/navbar/navbar.js"></script>
+       
+       <div id="navbar"></div>
+
        <script src="scripts.js"></script>
-        <div class="center">
+
+       <div id="content">
             <h1>Expanded Super Mario Maker v.6</h1>
 
             <div id="game"></div>
 
-            <span>Play game:</span>
+            
             <br>
+
             <button type="button" class="button" onclick="game('turbowarp')">Turbowarp</button>
             <button type="button" class="button" onclick="game('forkphorus')">Forkphorus</button>
-            <button type="button" class="button" onclick="game('htmlifier')">HTMLifier</button>
+            <!-- <button type="button" class="button" onclick="game('htmlifier')">HTMLifier</button> -->
             <br>
             <span>Choose forkphorus if on chromebook</span>
             <br>

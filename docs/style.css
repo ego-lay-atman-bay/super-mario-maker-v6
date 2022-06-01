@@ -2,10 +2,11 @@ body {
     background-color: #ffffff;
 }
 
-.center {
+#content {
     width: 480px;
     margin: 24px auto 0;
     padding-bottom: 24px;
+    margin-top: 5rem;
 }
 
 .button {
