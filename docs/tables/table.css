@@ -1,0 +1,69 @@
+.tg  {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+.tg td{
+    border-color:black;
+    border-style:solid;border-width:1px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+  overflow:hidden;
+  padding:10px 5px;
+  word-break:normal;
+}
+.tg th{
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+    top: 49px;
+}
+.tg .tg-header{
+    background-color:#ffffff;
+    position:-webkit-sticky;
+    position:sticky;
+    text-align:left;
+    vertical-align:middle;
+    will-change:transform
+  
+}
+.tg .tg-1{
+    background-color:#DBE5F1;
+    text-align:left;
+    vertical-align:middle
+}
+.tg .tg-2{
+    background-color:#D8D8D8;
+    text-align:left;
+    vertical-align:middle
+}
+@media screen and (max-width: 767px) {
+    .tg {
+        width: auto !important;
+    }.tg col {
+        width: auto !important;
+    }.tg-wrap {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .tg .tg-header {
+        background-color: hsl(0, 0%, 40%);
+    }
+    .tg .tg-1 {
+        background-color: hsl(218, 24%, 67%);
+    }
+    .tg .tg-2 {
+        background-color: hsl(0, 0%, 65%);
+    }
+    .tg a {
+        color: hsl(204, 21%, 46%);
+    }
+}
