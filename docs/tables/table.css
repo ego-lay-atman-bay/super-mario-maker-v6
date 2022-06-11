@@ -58,12 +58,9 @@
         background-color: hsl(0, 0%, 40%);
     }
     .tg .tg-1 {
-        background-color: hsl(218, 24%, 67%);
+        background-color: hsl(218, 24%, 50%);
     }
     .tg .tg-2 {
-        background-color: hsl(0, 0%, 65%);
-    }
-    .tg a {
-        color: hsl(204, 21%, 46%);
+        background-color: hsl(0, 0%, 50%);
     }
 }
