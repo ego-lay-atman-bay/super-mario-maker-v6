@@ -24,7 +24,7 @@ function game(player) {
 
         } else if (player == 'forkphorus') {
             var ifrm = document.createElement('iframe');
-            ifrm.setAttribute('src', 'https://v6p9d9t4.ssl.hwcdn.net/html/3780906/index.html');
+            ifrm.setAttribute('src', 'forkphorus/index.html');
             ifrm.setAttribute('id', 'player');
             ifrm.setAttribute('width', '480');
             ifrm.setAttribute('height', '360');
@@ -37,7 +37,7 @@ function game(player) {
             element.appendChild(ifrm);
         } else if (player == 'htmlifier') {
             var ifrm = document.createElement('iframe');
-            ifrm.setAttribute('src', 'htmlifier 6.0.3/index.html');
+            ifrm.setAttribute('src', 'htmlifier/index.html');
             ifrm.setAttribute('id', 'player');
             ifrm.setAttribute('width', '480');
             ifrm.setAttribute('height', '360');
